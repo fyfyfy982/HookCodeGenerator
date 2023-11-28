@@ -5,14 +5,14 @@ plugins {
 }
 
 group = "com.LanBaiCode"
-version = "1.1"
+version = "1.3"
 
 repositories {
     mavenCentral()
 }
 
 intellij {
-    version.set("2022.2.5")
+    version.set("2023.3.4")
     type.set("IC") // Target IDE Platform
 
     plugins.set(listOf("com.intellij.java"))
@@ -29,8 +29,8 @@ tasks {
     }
 
     patchPluginXml {
-        sinceBuild.set("222")
-        untilBuild.set("232.*")
+        sinceBuild.set("241")
+        untilBuild.set("241.*")
     }
     publishPlugin {
         token.set(System.getenv("token"))
